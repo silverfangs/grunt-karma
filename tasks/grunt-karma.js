@@ -28,6 +28,7 @@ module.exports = function (grunt) {
     var done = this.async()
     var options = this.options({
       background: false,
+      exitOnFailure: true,
       client: {}
     })
 
@@ -130,8 +131,11 @@ module.exports = function (grunt) {
       backgroundProcess.send({ config: data })
       done()
     } else {
-      var server = new Server(data, finished.bind(done))
-      server.start()
+      if (data.exitOnFailure) {
+        Server.start(data, finished.bind(done));
+      } else {
+        Server.start(data, done);
+      }
     }
   })
 }

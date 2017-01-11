@@ -1,6 +1,5 @@
 # grunt-karma-serial
-This is a fork from the original [project](https://github.com/karma-runner/grunt-karma). The reason this is created is to solve the issue of [#108](https://github.com/karma-runner/grunt-karma/pull/108), which enables developers to run `grunt-karma` to test multiple files serially without the halt of the program execution when one of the test case has been failed.
-
+This is a fork from the original [project](https://github.com/karma-runner/grunt-karma). The reason this is created is to solve the merging issue of [#108](https://github.com/karma-runner/grunt-karma/pull/108), which enables developers to run `grunt-karma` to test multiple files serially without the halt of the program execution when one of the test case has been failed. The original solution is provided by [gantaa](https://github.com/gantaa).
 
 
 > Grunt plugin for [Karma](https://github.com/karma-runner/karma)

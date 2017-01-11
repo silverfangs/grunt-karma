@@ -1,11 +1,11 @@
 {
-  "name": "grunt-karma",
-  "version": "2.0.0",
-  "description": "grunt plugin for karma test runner",
+  "name": "grunt-karma-serial",
+  "version": "1.0.0",
+  "description": "grunt plugin for karma test runner with fix on issue #108",
   "main": "tasks/grunt-karma.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/karma-runner/grunt-karma.git"
+    "url": "https://github.com/silverfangs/grunt-karma.git"
   },
   "keywords": [
     "gruntplugin",
